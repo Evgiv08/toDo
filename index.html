@@ -148,6 +148,7 @@
 // --------------------------------------------------
 		$('#list').on('click', function show(event) {
 			if ($(event.target).hasClass('btnOk')) {
+				console.log($(event.target.parentNode.parentNode));
 				$(event.target.parentNode.parentNode).toggleClass('liOk');
 				if (x === 2) {
 					$(event.target.parentNode.parentNode).toggleClass('notShow');
